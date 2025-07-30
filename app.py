@@ -72,7 +72,7 @@ st.subheader(f"{coin.capitalize()} Price Chart (Last {days} Days) with 20-Day SM
 st.line_chart(prices.set_index("ds")[['y', 'SMA_20']])
 
 # Additional Charts
-st.subheader("📈 Additional Data")
+st.subheader("Additional Data")
 
 if not market_caps.empty:
     st.write(f"{coin.capitalize()} Market Cap")

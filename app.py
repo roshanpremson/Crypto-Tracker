@@ -5,7 +5,7 @@ from prophet import Prophet
 from prophet.plot import plot_plotly
 
 # App title
-st.title("📈 Real-Time Crypto Price Tracker + Forecast")
+st.title("Real-Time Crypto Price Tracker + Forecast")
 st.write("Track and forecast cryptocurrency prices with this interactive tool.")
 
 # User configuration
@@ -56,7 +56,7 @@ else:
 prices['SMA_20'] = prices['y'].rolling(window=20).mean()
 
 # Display Key Metrics
-st.subheader("📊 Key Metrics")
+st.subheader("Key Metrics")
 col1, col2 = st.columns(2)
 
 if not market_caps.empty:
@@ -83,7 +83,7 @@ if not total_volumes.empty:
     st.line_chart(total_volumes.set_index("ds")["total_volume"])
 
 # Forecast
-st.subheader(f"📅 Forecast: Next {forecast_horizon} Days")
+st.subheader(f"Forecast: Next {forecast_horizon} Days")
 st.write("Forecast generated using Facebook Prophet.")
 
 model = Prophet()

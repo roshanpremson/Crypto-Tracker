@@ -9,7 +9,7 @@ st.title("Real-Time Crypto Price Tracker + Forecast")
 st.write("Track and forecast cryptocurrency prices with this interactive tool.")
 
 # User configuration
-st.subheader("⚙️ Configuration")
+st.subheader("Configuration")
 coin = st.selectbox("Choose a cryptocurrency", ["bitcoin", "ethereum", "cardano", "dogecoin"])
 days = st.slider("Days of historical data", 30, 180, 90)
 forecast_horizon = st.slider("Forecast for next _ days", 7, 30, 14)
